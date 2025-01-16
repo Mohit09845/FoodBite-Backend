@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+
+# TypeScript build directory
+dist/
+
+# TypeScript type definition files
+*.d.ts
+
+# Environment variables
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDEs and Editors
+.idea/
+.vscode/
+
+# MacOS system files
+.DS_Store
+
+# Coverage directory for code coverage tools (e.g., jest)
+coverage/
+
+# Optional files
+*.tgz
+*.swp
