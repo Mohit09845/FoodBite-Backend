@@ -16,8 +16,10 @@ app.get('/health',async(req: Request,res: Response)=>{
 })
 
 import myUserRoute from './route/user.route';
+import myRestaurantRoute from './route/restaurant.route';
 
 app.use('/api/my/user',myUserRoute);
+app.use('/api/my/restaurant',myRestaurantRoute);
 
 const port: number = parseInt(process.env.PORT as string) || 7000;
 
