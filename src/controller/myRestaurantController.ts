@@ -5,9 +5,6 @@ import mongoose from 'mongoose';
 
 export const createRestaurant: RequestHandler = async(req,res)=>{
     try {
-
-        
-
         const existingRestaurant = await Restaurant.findOne({user: req.userId});
 
         if(existingRestaurant){

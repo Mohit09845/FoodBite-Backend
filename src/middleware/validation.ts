@@ -22,10 +22,10 @@ export const validateRestaurantRequest = [
     body("restaurantName").notEmpty().withMessage("Restaurant name is required"),
     body("city").notEmpty().withMessage("City name is required"),
     body("country").notEmpty().withMessage("Country name is required"),
-    body("deliveyPrice").isFloat({min: 0}).withMessage("delivery price must be a positive number"),
+    body("deliveryPrice").isFloat({min: 0}).withMessage("delivery price must be a positive number"),
     body("estimatedDeliveryTime").isInt({min: 0}).withMessage("delivery time must be a positive number"),
     body("cuisines").isArray().withMessage("Cuisines must be an array").not().isEmpty().withMessage("Cuisines array cannot be empty"),
-    body("menuItmes").isArray().withMessage("Menu items must be an array"),
+    body("menuItems").isArray().withMessage("Menu items must be an array"),
     body("menuItems.*.name").notEmpty().withMessage("Menu item name is required"),
     body("menuItems.*.price").isFloat({min: 0}).withMessage("Menu item Price is required and must be a positive number"),
     handleValidationErrors
